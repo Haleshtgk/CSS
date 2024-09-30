@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        *{ /* Universal selector*/
+            font-size: 2rem;
+            color: purple;
+            border: 1px double green;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .container *{
+            color: yellow;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Selector</h1>
+        <p>We have some css selector to style the html element</p>
+    </center>
+
+    <ul>
+        <li>Universal selectors(*)</li>
+        <li>Element selectors(tag name)</li>
+        <li>Class name selectors(class name using .)</li>
+        <li>Id selectors (using id attribute)</li>
+        <li>attribute selectors(using id attribute inside the element)</li>
+        <li>attribute with value selector(attribute with val)</li>
+    </ul>
+    <h1>Universal selectors(*)</h1>
+    <p>This selectors for all the elements present in parent element</p>
+
+    <div class="container">
+        <h1>heading1</h1>
+        <h1>heading2</h1>
+        <h1>heading3</h1>
+        <h1>heading4</h1>
+        <h1>heading5</h1>
+        <h1>heading6</h1>
+        <h1>heading7</h1>
+        <h1>heading8</h1>
+        <h1>heading9</h1>
+        <h1>heading10</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.project-item h3 {
+    color: darkgreen;
+}

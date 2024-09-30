@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            min-height: 100vh;
+            background-color: rgb(227, 67, 112);
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            padding: 4%;
+            gap: 30px;
+
+        }
+        .card{
+            width: 350px;
+            background-color: white;
+            padding: 30px;
+            line-height: 1.5;
+
+        }
+
+        .card .main-btn{
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+            padding: 10px;
+            font-size: 1.1rem;
+            background-color: rgb(227, 67, 112);
+            font-weight: 600;
+            border-radius: 5px;
+            box-shadow: 0px 3px 10px rgb(227, 67, 112);
+            cursor: pointer;
+        }
+        .card .amin-btn:active{
+            transform: scale(0.8);
+        }
+        .acrd h1{
+            color: rgb(17, 135, 109);
+            margin-bottom: 20px;
+        }
+        .card p{
+            color: rgb(51, 45, 45);
+        }
+    </style>
+</head>
+<body>
+    <center></center>
+        <h1>CSS Selector</h1>
+        <p>We have some css selector to style the html element</p>
+    </center>
+
+    <ul>
+        <li>Universal selectors(*)</li>
+        <li>Element selectors(tag name)</li>
+        <li>Class name selectors(class name using .)</li>
+        <li>Id selectors (using id attribute)</li>
+        <li>attribute selectors(using id attribute inside the element)</li>
+        <li>attribute with value selector(attribute with val)</li>
+    </ul>
+    <h1>Element selectors(tag name)</h1>
+    <section>
+        <!-- div*5>h1{heading$}/p{Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse ea necessitatibus quo animi ducimus commodi tenetur asperiores rerum minima voluptas, earum sed vitae quibusdam eaque quam velit aperiam laborum!}/btn{Know more} -->
+        <div class="card">
+            <h1>heading1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse ea necessitatibus quo animi ducimus commodi tenetur asperiores rerum minima voluptas, earum sed vitae quibusdam eaque quam velit aperiam laborum!</p>
+            <button class="main-btn">Know more</button>
+        </div>
+        <div class="card">
+            <h1>heading2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse ea necessitatibus quo animi ducimus commodi tenetur asperiores rerum minima voluptas, earum sed vitae quibusdam eaque quam velit aperiam laborum!</p>
+            <button class="main-btn">Know more</button>
+        </div>
+        <div class="card">
+            <h1>heading3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse ea necessitatibus quo animi ducimus commodi tenetur asperiores rerum minima voluptas, earum sed vitae quibusdam eaque quam velit aperiam laborum!</p>
+            <button class="main-btn">Know more</button>
+        </div>
+        <div class="card">
+            <h1>heading4</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse ea necessitatibus quo animi ducimus commodi tenetur asperiores rerum minima voluptas, earum sed vitae quibusdam eaque quam velit aperiam laborum!</p>
+            <button class="main-btn">Know more</button>
+        </div>
+        <div class="card">
+            <h1>heading5</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse ea necessitatibus quo animi ducimus commodi tenetur asperiores rerum minima voluptas, earum sed vitae quibusdam eaque quam velit aperiam laborum!</p>
+            <button class="main-btn">Know more</button>
+        </div>
+    </section>
+</body>
+</html>
