@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href]{
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 30px;
+            padding: 20px;
+            text-decoration: none;
+            border: 3px solid #0c0c0c;
+        }
+        a[href="http://www.google.com"]{
+            background-color: lightcoral;
+            color: #0c0c0c;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            cursor:copy;
+        }
+        a[target="_parent"]{
+            background-color: rgb(189, 65, 65);
+            color: #faf5f5;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 900;
+        }
+        a[download="./p1.html"]{
+            background-color: rgb(61, 155, 210);
+            color: #faf5f5;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+        }
+        input[type]{
+            padding: 10px;
+            width: 400px;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            outline: none;
+            font-size: 1.rem;
+        }
+        input[type="text"]{
+            border: 2px solid green;
+            background-color: rgba(161, 238, 144, 0.358);
+        }
+        input[type="email"]{
+            border: 2px solid rgb(10, 75, 139);
+            background-color: rgba(11, 189, 239, 0.194);
+        }
+        input[type="password"]{
+            border: 2px solid rgb(255, 9, 247);
+            background-color: rgba(218, 238, 144, 0.263);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Selector</h1>
+        <p>We have some css selector to style the html element</p>
+    </center>
+
+    <ul>
+        <li>Universal selectors(*)</li>
+        <li>Element selectors(tag name)</li>
+        <li>Class name selectors(class name using .)</li>
+        <li>Id selectors (using id attribute)</li>
+        <li>attribute selectors(using id attribute inside the element)</li>
+        <li>attribute with value selector(attribute with val)</li>
+    </ul>
+    <h1>attribute with value selector(attribute with val)</h1>
+
+    <a href="http://www.google.com" download="" target="_blank">This is the like to <b>Google</b></a>
+    <a href="http://www.facebook.com" download="" target="_parent">This is the like to <b>facebook</b></a>
+    <a href="http://www.instagram.com" download="./p1.html" target="_blank">This is the like to <b>instagram</b></a>
+
+    <input type="text" placeholder="Enter your name">
+    <input type="email" placeholder="Enter your email">
+    <input type="password" placeholder="Enter your password">
+</body>
+</html>

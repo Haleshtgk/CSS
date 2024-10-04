@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <Style>
+        #container{
+            min-height: 100vh;
+            background-color: rgb(107, 246, 200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #card{
+            width: 350px;
+            background-color: white;
+            padding: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 15px 15px 0 black;
+            border: 3px solid black;
+        }
+        #subtitle{
+            line-height: 1.5;
+        }
+        #main-btn{
+            width: 100%;
+            border: none;
+            padding: 10px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            background-color: rgb(107, 246, 200);
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px black;
+            cursor: progress;
+        }
+        #main-btn:active{
+            box-shadow: none;
+            transform: translateX(2px) translateY(2px);
+        }
+    </Style>
+</head>
+<body>
+    <center>
+        <h1>CSS Selector</h1>
+        <p>We have some css selector to style the html element</p>
+    </center>
+
+    <ul>
+        <li>Universal selectors(*)</li>
+        <li>Element selectors(tag name)</li>
+        <li>Class name selectors(class name using .)</li>
+        <li>Id selectors (using id attribute)</li>
+        <li>attribute selectors(using id attribute inside the element)</li>
+        <li>attribute with value selector(attribute with val)</li>
+    </ul>
+    <h1>Id selectors (using id attribute)</h1>
+
+    <section id="container">
+        <div id="card">
+            <h1 id="heading">This is heading</h1>
+            <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur vitae magnam quod modi praesentium fugiat, maxime porro, quis quae dolorum at recusandae a nostrum ad cumque est aspernatur eligendi voluptates?</p>
+            <button id="main-btn">Create Account</button>
+        </div>
+    </section>
+</body>
+</html>

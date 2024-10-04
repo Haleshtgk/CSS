@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinational selectors</title>
+    <style>
+        .container{
+            padding: 30px;
+            margin: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aquamarine;
+            border: 3px solid black;
+        }
+        .container h1{/*Descendenr Selector*/
+            color: white;
+            background-color: darkgoldenrod;
+            padding: 10px;
+        }
+        .container p{
+            color: white;
+            background-color: darkcyan;
+            padding: 10px;
+        }
+        .container div{
+            padding: 20px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Combinational selectors</h1>
+    </center>
+
+    <ul>
+        <li>Descendenr Selector (Using SPACE)</li>
+        <li>Child Selector(Using > Symbol) </li>
+        <li>Adjacent sibling(using + Symbol)</li>
+        <li>General sibling (using ~ Symbol)</li>
+    </ul>
+
+    <h1>1) Descendenr Selector (Using SPACE)</h1>
+
+    <section class="container">
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+        <div>
+            <h1>heading 1(Grand child element)</h1>
+        <p>this is paragraph(child)</p>
+        </div>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+    </section>
+</body>
+</html>

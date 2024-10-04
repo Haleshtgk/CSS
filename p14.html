@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinational selectors</title>
+    <style>
+        section{
+            padding: 30px;
+            margin: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aquamarine;
+            border: 3px solid black;
+        }
+        section+h1{
+            color: white;
+            background-color: black;
+            padding: 20px;
+
+        }
+        section + h1 + p{
+            color: white;
+            background-color: rgba(19, 104, 137, 0.425);
+            padding: 20px;
+        }
+        section + h1 + p + h1{
+            color: white;
+            background-color: rgba(27, 137, 19, 0.425);
+            padding: 20px;
+        }
+        section + h1 + p + h1 + p + div{
+            border: 3px solid green;
+            background-color: rgba(1, 149, 255, 0.347);
+            padding: 20px;
+        }
+        section + h1 + p + h1 + p + div h1{
+            color: blue;
+        }
+        section + h1 + p + h1 + p + div p{
+            color: beige;
+        }
+        .card:hover + .card{
+            background-color: aqua;
+            color: aliceblue;
+        }
+        .card{
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 3px solid black;
+        }
+        .container1{
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Combinational selectors</h1>
+    </center>
+
+    <ul>
+        <li>Descendenr Selector (Using SPACE)</li>
+        <li>Child Selector(Using > Symbol) </li>
+        <li>Adjacent sibling(using + Symbol)</li>
+        <li>General sibling (using ~ Symbol)</li>
+    </ul>
+
+    <h1>3) Adjacent sibling(using + Symbol)</h1>
+    <p>The Adjacent sibling selectors is only for which is next to that</p>
+    <section class="container">
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+        <div>
+            <h1>heading 1(Grand child element)</h1>
+        <p>this is paragraph(child)</p>
+        </div>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+    </section>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+        <div>
+            <h1>heading 1(Grand child element)</h1>
+        <p>this is paragraph(child)</p>
+        </div>
+
+        <h1>heading 1(child element)</h1>
+        <p>this is paragraph(child)</p>
+
+        <!-- example 2 -->
+         <div class="container1">
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta delectus, laudantium eaque saepe modi voluptatum necessitatibus dolore, assumenda hic ea iste dolorem vel. Doloremque sit eaque quod sunt cum?</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta delectus, laudantium eaque saepe modi voluptatum necessitatibus dolore, assumenda hic ea iste dolorem vel. Doloremque sit eaque quod sunt cum?</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta delectus, laudantium eaque saepe modi voluptatum necessitatibus dolore, assumenda hic ea iste dolorem vel. Doloremque sit eaque quod sunt cum?</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta delectus, laudantium eaque saepe modi voluptatum necessitatibus dolore, assumenda hic ea iste dolorem vel. Doloremque sit eaque quod sunt cum?</p>
+            </div>
+         </div>
+</body>
+</html>
