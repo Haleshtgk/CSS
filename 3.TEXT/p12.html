@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        section{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+        section div{
+            padding: 30px;
+            border: 4px solid #ccc;
+            width: 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        section div p{
+            text-align: center;
+        }
+
+        .b1{
+            text-wrap: wrap;
+        }
+        .b2{
+            text-wrap: nowrap;
+        }
+        .b3{
+            text-wrap: balance;
+        }
+        .b4{
+            text-wrap: pretty;
+            /* font-size: 1.4rem; */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>text-wrap</h1>
+    </center>
+    <hr>
+    <section>
+        <h2>Wrap</h2>
+        <div class="b1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur, molestiae quis perferendis laudantium adipisci provident minima nihil omnis earum ipsum quae ipsa fugit dolorum eius numquam illo expedita placeat!</p>
+        </div>
+        <hr>
+        <h2>NoWrap</h2>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur, molestiae quis perferendis laudantium adipisci provident minima nihil omnis earum ipsum quae ipsa fugit dolorum eius numquam illo expedita placeat!</p>
+        </div>
+        <hr>
+        <h2>balance</h2>
+        <div class="b3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur, molestiae quis perferendis laudantium adipisci provident minima nihil omnis earum ipsum quae ipsa fugit dolorum eius numquam illo expedita placeat!</p>
+        </div>
+        <hr>
+        <h2>Pretty</h2>
+        <div class="b4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur, molestiae quis perferendis laudantium adipisci provident minima nihil omnis earum ipsum quae ipsa fugit dolorum eius numquam illo expedita placeat!</p>
+        </div>
+    </section>
+</body>
+</html>
