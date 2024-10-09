@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Holiday</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .location img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .book-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #008080;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book-btn:hover {
+            background-color: #005757;
+        }
+        
+        footer {
+            background-color: #008080;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            background-color: #0066665d;
+            color: rgb(182, 14, 14);
+            padding: 15px 0;
+            font-size: 0.9em;
+            margin-top: 20px;
+            transform: translateY(39px);
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: rgb(182, 14, 14);
+        }
+
+        .footer-section.contact p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#book">Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Your Summer Holiday</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora magnam deserunt a eaque laboriosam ipsam. Atque deserunt in dolorum necessitatibus nostrum! Iure temporibus vero eum repellat, sint voluptatum autem nobis.</p>
+        </section>
+<hr>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, obcaecati. Libero ipsam dolorem voluptate sed minima blanditiis, corporis eaque est rerum doloribus beatae omnis autem earum dolore deserunt, eius tenetur?
+            Consequuntur numquam sapiente totam suscipit ab id. Rem alias ab itaque dicta maiores illum expedita! Error officiis fugit corporis maiores molestiae, eligendi dolores harum fuga veniam, cumque soluta accusantium odio?</p>
+        </section>
+        <hr>
+        <h1 id="book">Book your Favorite place to visit</h1>
+        <section id="5terre">
+            <div class="location">
+                <img src="https://www.w3schools.com/w3css/img_5terre.jpg" alt="5 Terre">
+                <div class="info">
+                    <h2>5 Terre</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptates illo alias quos nihil eveniet, sit delectus excepturi molestiae dolorum repudiandae debitis nemo sed id consequuntur a autem omnis amet!</p>
+                    <center><button class="book-btn">Book Now</button></center>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="manarola">
+            <div class="location">
+                <img src="https://www.w3schools.com/w3css/img_monterosso.jpg" alt="Manarola">
+                <div class="info">
+                    <h2>Manarola</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptates illo alias quos nihil eveniet, sit delectus excepturi molestiae dolorum repudiandae debitis nemo sed id consequuntur a autem omnis amet!</p>
+                    <center><button class="book-btn">Book Now</button></center>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="corniglia">
+            <div class="location">
+                <img src="https://www.w3schools.com/w3css/img_corniglia.jpg" alt="Corniglia">
+                <div class="info">
+                    <h2>Corniglia</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptates illo alias quos nihil eveniet, sit delectus excepturi molestiae dolorum repudiandae debitis nemo sed id consequuntur a autem omnis amet!</p>
+                    <center><button class="book-btn">Book Now</button></center>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="riomaggiore">
+            <div class="location">
+                <img src="https://www.w3schools.com/w3css/img_riomaggiore.jpg" alt="Riomaggiore">
+                <div class="info">
+                    <h2>Riomaggiore</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptates illo alias quos nihil eveniet, sit delectus excepturi molestiae dolorum repudiandae debitis nemo sed id consequuntur a autem omnis amet!</p>
+                    <center><button class="book-btn">Book Now</button></center>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="vernazza">
+            <div class="location">
+                <img src="https://www.w3schools.com/w3css/img_riomaggiore.jpg" alt="Vernazza">
+                <div class="info">
+                    <h2>Vernazza</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptates illo alias quos nihil eveniet, sit delectus excepturi molestiae dolorum repudiandae debitis nemo sed id consequuntur a autem omnis amet!</p>
+                    <center><button class="book-btn">Book Now</button></center>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="monterosso">
+            <div class="location">
+                <img src="https://www.w3schools.com/w3css/img_vernazza.jpg" alt="Monterosso">
+                <div class="info">
+                    <h2>Monterosso</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptates illo alias quos nihil eveniet, sit delectus excepturi molestiae dolorum repudiandae debitis nemo sed id consequuntur a autem omnis amet!</p>
+                    <center><button class="book-btn">Book Now</button></center>
+                </div>
+            </div>
+        </section>
+<hr>
+        <section id="book">
+            <h2>Book Your Trip</h2>
+            <p>Contact us now to reserve your spot on this unforgettable journey!</p>
+            <br>
+            <label for="">Name:</label>
+            <input type="text" placeholder="Eneter your name" style="padding: 10px; border: none; border: 2px solid greenyellow;">
+            <br><br>
+            <center><label for="">Email:</label>
+                <input type="email" placeholder="Eneter your Email" style="padding: 10px; border: none; border: 2px solid greenyellow;"></center>
+            <br><br>
+            <p style="text-align: end;"><label for="">Phone:</label>
+                <input type="text" placeholder="+91 111 0000 111" style="padding: 10px; border: none; border: 2px solid greenyellow;"></p>
+            <center><button class="book-btn">Book Now</button></center>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We provide the best holiday packages to explore the beauty of Italy's Cinque Terre. Join us for an unforgettable adventure.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#book">Book Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@summerholiday.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: Cinque Terre, Italy</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Summer Holiday Guide | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
