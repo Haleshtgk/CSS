@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            background-color: whitesmoke;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .card{
+            transform: translateY(-90px);
+            border: 1px solid gray;
+            padding: 20px;
+            display: block;
+        }
+        .links{
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .card1{
+            transform: translateY(160px);
+            border: 1px solid gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <center><h1 class="title1">instagram</h1></center>
+            <br>
+            <input type="text" placeholder="Phone number, username or email" id="email">
+            <br>
+            <input type="password" placeholder="Password" id="password"><br>
+            <button type="button" onclick="loginHandler()" style="background-color: royalblue; padding: 10px;">Login</button>
+            <br><br>
+            <center><p>--------------OR------------------</p></center>
+<br><br>
+            <center>
+                <div class="links">
+                    <a href="#" class="facebook" style="color: rgb(22, 80, 174);"><i class="fa-brands fa-square-facebook"></i> Login with Facebook</a>
+<br><br>
+            <a href="#" style="color: gray;"><small>Forgot Password</small></a>
+                </div>
+            </center>
+            <div class="card1">
+                <p>Don't have an account <a href="./create.html">Create Account</a></p>
+            </div>
+        </div>
+        
+        
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script>
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const firebaseConfig = {
+        apiKey: "AIzaSyDcdFrlUOmFrzq5D55FvnPAbkqXzxKLP4w",
+        authDomain: "authentication-6d031.firebaseapp.com",
+        projectId: "authentication-6d031",
+        storageBucket: "authentication-6d031.appspot.com",
+        messagingSenderId: "389289951618",
+        appId: "1:389289951618:web:570beafd83cec2234d0f9b",
+        measurementId: "G-J6TB82EWC3"
+        };
+
+        const app = firebase.initializeApp(firebaseConfig);//initialize firebase creadentional in our website
+
+        const AuthenticationRoom = firebase.auth();//using firebase feature
+
+        // const email = document.getElementById('email');
+        // const password = document.getElementById('password');
+
+        function loginHandler(){
+            // alert(email.value)
+            // alert(email.value)
+
+            AuthenticationRoom.signInWithEmailAndPassword(email.value, password.value).then(function(){
+                alert('Login is Success')
+            })
+            .catch(function(error){
+                alert('Login is failed plz try again later..')
+                console.log(error.message);
+            })
+            }
+        
+    </script>
+</body>
+</html>

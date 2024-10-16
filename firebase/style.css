@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    background-color: rgb(196, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: #fff;
+    width: 330px;
+    padding: 20px;
+}
+.card1{
+    background-color: #fff;
+    width: 330px;
+    padding: 20px;
+}
+.card1 a{
+    color: rgb(196, 19, 19);
+}
+.group{
+
+}
+.group input{
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.card a{
+    color: rgb(196, 19, 19);
+}
+.card button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgb(138, 17, 17);
+    color: #fff;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: rgb(55, 8, 8);
+}
