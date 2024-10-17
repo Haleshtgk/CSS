@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>columns</title>
+    <style>
+        .container{
+            padding: 20px;
+            background-color: white;
+            font-family: sans-serif;
+            line-height: 1.5;
+            font-weight: 500;
+            column-count: 4;
+            gap: 30px;
+            column-rule: 2px solid red;/*it is like a hr*/
+            column-fill: balance;
+        }
+        .container p{
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .container h1{
+            column-span: all;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Columns</h1>
+    </center>
+    <hr>
+    <section class="container">
+        <h1>This is the example of Columns</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil quos reprehenderit facilis nulla voluptas, mollitia ab suscipit quidem dolorum quo eius atque illum obcaecati, praesentium totam error magni facere.
+        Aliquam, quis veritatis eaque qui exercitationem asperiores inventore adipisci libero dignissimos accusantium nemo illum ipsam, sequi dolorum molestiae pariatur eligendi mollitia iste ea! Officia ipsa excepturi nihil sapiente, accusamus consequatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil quos reprehenderit facilis nulla voluptas, mollitia ab suscipit quidem dolorum quo eius atque illum obcaecati, praesentium totam error magni facere.
+            Aliquam, quis veritatis eaque qui exercitationem asperiores inventore adipisci libero dignissimos accusantium nemo illum ipsam, sequi dolorum molestiae pariatur eligendi mollitia iste ea! Officia ipsa excepturi nihil sapiente, accusamus consequatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil quos reprehenderit facilis nulla voluptas, mollitia ab suscipit quidem dolorum quo eius atque illum obcaecati, praesentium totam error magni facere.
+                Aliquam, quis veritatis eaque qui exercitationem asperiores inventore adipisci libero dignissimos accusantium nemo illum ipsam, sequi dolorum molestiae pariatur eligendi mollitia iste ea! Officia ipsa excepturi nihil sapiente, accusamus consequatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil quos reprehenderit facilis nulla voluptas, mollitia ab suscipit quidem dolorum quo eius atque illum obcaecati, praesentium totam error magni facere.
+                    Aliquam, quis veritatis eaque qui exercitationem asperiores inventore adipisci libero dignissimos accusantium nemo illum ipsam, sequi dolorum molestiae pariatur eligendi mollitia iste ea! Officia ipsa excepturi nihil sapiente, accusamus consequatur.</p>
+    </section>
+</body>
+</html>
