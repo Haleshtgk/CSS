@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, td{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            width: 80%;
+            padding: 10px;
+        }
+        td:nth-child(odd){
+            background-color: #e1efd4;
+        }
+        td:nth-child(even){
+            background-color: black;
+            color: white;
+        }
+        td:nth-child(odd):hover{
+            background-color: #abf5e3;
+        }
+        td:nth-child(even):hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>odd-even-table</h1>
+    </center>
+    <hr>
+    <table class="odd-even-table">
+        <caption>Employee Table</caption>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Mobile</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>A</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>B</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>c</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>d</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>d</td>
+            <td>700</td>
+        </tr>
+    </table>
+</body>
+</html>
