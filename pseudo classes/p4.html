@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+        }
+        input:autofill{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>:autofill</h1>
+    </center>
+    <hr>
+    <form autocomplete="on">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" id="name" autocomplete="name">
+        <br>
+        <label for="email">Enetr your email</label>
+        <input type="email" name="email" id="email" autocomplete="email">
+        <br>
+        <label for="phone">Enetr your phone no</label>
+        <input type="phone" name="phone" id="phone" autocomplete="phone">
+    </form>
+</body>
+</html>
