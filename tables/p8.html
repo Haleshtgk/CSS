@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, td, th{
+            border: 1px solid #222;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .table-Layout{
+            width: 40%;
+            table-layout: fixed;
+        }
+        table .table-Layout{
+            overflow: hidden;
+            /* overflow: scroll; */
+            /* overflow: auto; */
+
+            /* overflow: hidden; */
+            text-overflow: ellipsis !important; /*(text.......)*/
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Table Layout</h1>
+    </center>
+
+    <table class="table-Layout">
+        <caption>Colleges in Bangalore</caption>
+        <tr>
+            <th>SL.No</th>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>RV college</td>
+            <td>1</td>
+            <td>Bengluru</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td> RIT</td>
+            <td>2</td>
+            <td>Bengluru</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>PES </td>
+            <td>3</td>
+            <td>Bengluru</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>BMS</td>
+            <td>4</td>
+            <td>Bengluru</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>GAT</td>
+            <td>5</td>
+            <td>Bengluru</td>
+        </tr>
+
+    </table>
+</body>
+</html>
