@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        center+hr+h1+p{
+            color: rgb(255, 0, 0);
+        }
+        center+hr+h1+p::first-line{
+            color: blue;
+            font-weight: 900;
+            font-style: italic;
+            letter-spacing: 0.4rem;
+        }
+        center~p~p::first-letter{
+            color: rgb(136, 255, 0);
+            font-size: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Pscudoelement..!</h1>
+        <p>In CSS pscudo- element allows you to style the element or parts of elements without adding any IDs or classes to them.</p>
+        <p>CSS3 inrroduced a new double colon(::) syntax for Pscudoelement to destingush between them and pscoudo-class</p>
+        <h1>selectors::pseudo-element{property : value;}</h1>
+    </center>
+
+    <hr>
+    <h1>::first-line and ::first-letter</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis eos veritatis quae deserunt ullam voluptas cum maxime sapiente repellat a nihil quos assumenda recusandae iure nesciunt doloribus tempora, laborum distinctio!
+        Fugit ipsam distinctio eos numquam dolorum, at, sed fugiat, facere repellendus eveniet sapiente consectetur? Sit impedit harum laudantium alias quibusdam vitae odit porro nostrum corporis, quia omnis nulla qui necessitatibus.
+        Reiciendis, fugit voluptates accusamus incidunt odit temporibus quasi consequatur error sint nostrum architecto corporis dolore atque ratione vel quos iste. Dolores laudantium facere, quod modi ab similique temporibus perspiciatis dolorem!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis eos veritatis quae deserunt ullam voluptas cum maxime sapiente repellat a nihil quos assumenda recusandae iure nesciunt doloribus tempora, laborum distinctio!
+        Fugit ipsam distinctio eos numquam dolorum, at, sed fugiat, facere repellendus eveniet sapiente consectetur? Sit impedit harum laudantium alias quibusdam vitae odit porro nostrum corporis, quia omnis nulla qui necessitatibus.
+        Reiciendis, fugit voluptates accusamus incidunt odit temporibus quasi consequatur error sint nostrum architecto corporis dolore atque ratione vel quos iste. Dolores laudantium facere, quod modi ab similique temporibus perspiciatis dolorem!
+    </p>
+</body>
+</html>

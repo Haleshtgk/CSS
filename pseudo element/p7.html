@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Board</title>
+    <style>
+       * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.ludo-board {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+/* Red Area */
+.red-home {
+    grid-column: 1 / 7;
+    grid-row: 1 / 7;
+    background-color: red;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.red-path {
+    grid-column: 7 / 9;
+    grid-row: 1 / 7;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Yellow Area */
+.yellow-home {
+    grid-column: 9 / 15;
+    grid-row: 1 / 7;
+    background-color: yellow;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.yellow-path {
+    grid-column: 9 / 15;
+    grid-row: 7 / 9;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Center */
+.center {
+    grid-column: 7 / 9;
+    grid-row: 7 / 9;
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+}
+
+.center::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: conic-gradient(red 0% 25%, yellow 25% 50%, green 50% 75%, blue 75% 100%);
+}
+
+/* Green Area */
+.green-home {
+    grid-column: 9 / 15;
+    grid-row: 9 / 15;
+    background-color: green;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.green-path {
+    grid-column: 7 / 9;
+    grid-row: 9 / 15;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Blue Area */
+.blue-home {
+    grid-column: 1 / 7;
+    grid-row: 9 / 15;
+    background-color: blue;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.blue-path {
+    grid-column: 1 / 7;
+    grid-row: 7 / 9;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Token areas for each color */
+.token-area {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+}
+
+.token-area div {
+    background-color: white;
+    border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ludo-board">
+        <!-- Red Area -->
+        <div class="red-home">
+            <div class="token-area"></div>
+        </div>
+        <div class="red-path"></div>
+
+        <!-- Yellow Area -->
+        <div class="yellow-home">
+            <div class="token-area"></div>
+        </div>
+        <div class="yellow-path"></div>
+
+        <!-- Center -->
+        <div class="center"></div>
+
+        <!-- Green Area -->
+        <div class="green-home">
+            <div class="token-area"></div>
+        </div>
+        <div class="green-path"></div>
+
+        <!-- Blue Area -->
+        <div class="blue-home">
+            <div class="token-area"></div>
+        </div>
+        <div class="blue-path"></div>
+    </div>
+</body>
+</html>

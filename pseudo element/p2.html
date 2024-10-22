@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        center~h1::before{
+            content: 'Mr.';
+            /* color: purple; */
+
+            cursor: cell;
+            font-weight: 900;
+            box-shadow: 2px 2px 2px green;
+        }
+        center~h1::after{
+            content: ' welcome to css';
+            /* color: orange; */
+            border-bottom: 2px double yellowgreen;
+            border-top: 4px dotted;
+            border-top-color: aqua;
+            border-right: 2px solid green;
+            border-left: 2px solid rgb(18, 218, 245);
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>::after & ::before</h1>
+    </center>
+
+    <hr>
+    <h1>John</h1>
+    <h1>Mathew</h1>
+    <h1>Sha</h1>
+</body>
+</html>
