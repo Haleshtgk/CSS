@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input[type="radio"]:checked{
+            border: none;
+            outline: 2px solid blue;
+            accent-color: green;
+            width: 25px;
+        }
+        input[type="radio"]:default{
+            width: 25px;
+            outline: 2px solid red;
+        } */
+        input[type="radio"]{
+            user-select: none;
+            position: relative;
+            width: 100px;
+            padding: 10px;
+            background: rgb(96, 96, 99);
+            appearance: none;
+            height: 50px;
+            border-radius: 100px;
+        }
+        input[type="radio"]:before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            background-color: #ccc;
+            position: absolute;
+            transition: 1s !important;
+        }
+        input[type="radio"]:checked::before{
+            transform: translateX(50px);
+            background-color: green;
+            background: url(https://cdn-icons-png.freepik.com/256/5610/5610944.png?semt=ais_hybrid) no-repeat center;
+            background-size: cover;
+        }
+        input[type="checkbox"]:checked{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>:checked and :defult (radio, checkbox)</h1>
+    </center>
+    <hr>
+    <form action="">
+        <label for="">How do you find about us?</label>
+        <label for="">
+            <input type="radio" name="source" id="">
+            Youtube
+        </label>
+        <label for="">
+            <input type="radio" name="source" id="" checked>
+            Facebook
+        </label>
+        <label for="">
+            <input type="radio" name="source" id="">
+            Insta
+        </label>
+    </form>
+</body>
+</html>
