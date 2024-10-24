@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Checkbox Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            margin: 0;
+        }
+
+        .checkbox-container {
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #ff6ec4, #7873f5);
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer;
+            perspective: 1000px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.6s ease;
+        }
+
+        /* Flip effect */
+        input[type="checkbox"]:checked {
+            transform: rotateY(180deg);
+        }
+
+        input[type="checkbox"]:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #ff00cc, #3333ff);
+            transition: 0.5s;
+            backface-visibility: hidden;
+            transform: rotateY(0deg);
+        }
+
+        input[type="checkbox"]:checked:before {
+            background: linear-gradient(45deg, #00ff99, #3333ff);
+            box-shadow: 0 0 20px #00ff99;
+            transform: rotateY(180deg);
+        }
+
+        /* Glowing effect on hover */
+        input[type="checkbox"]:hover {
+            box-shadow: 0px 10px 20px rgba(255, 105, 180, 0.8), 0px 0px 20px rgba(105, 180, 255, 0.8);
+        }
+
+        /* Smooth scale on hover */
+        input[type="checkbox"]:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="cb1">
+        <input type="checkbox" id="cb2">
+        <input type="checkbox" id="cb3" checked>
+        <input type="checkbox" id="cb4">
+        <input type="checkbox" id="cb5">
+        <input type="checkbox" id="cb6">
+    </div>
+
+</body>
+</html>

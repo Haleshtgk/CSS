@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Checkbox Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 20px;
+            background: url(https://i.pinimg.com/originals/ec/c0/15/ecc015d4e89f77b435df3cd81928ad48.gif) no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease, background 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="checkbox"]:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+        }
+
+        input[type="checkbox"]:checked {
+            background: url(https://www.icegif.com/wp-content/uploads/2022/04/icegif-942.gif) no-repeat center;
+            background-size: cover;
+            filter: drop-shadow(10px 10px 15px rgba(255, 255, 0, 0.8));
+        }
+
+        input[type="checkbox"]:checked:hover {
+            transform: scale(1.2);
+        }
+
+        input[type="checkbox"]:default {
+            background: url(https://media.tenor.com/vOc-lwf_sr4AAAAM/detective-kiss.gif) no-repeat center;
+            background-size: cover;
+        }
+
+        .checkbox-container {
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkbox-container">
+        <input type="checkbox" id="cb1">
+        <input type="checkbox" id="cb2">
+        <input type="checkbox" id="cb3">
+        <input type="checkbox" id="cb4" checked>
+        <input type="checkbox" id="cb5">
+        <input type="checkbox" id="cb6">
+        <input type="checkbox" id="cb7">
+    </div>
+</body>
+</html>
