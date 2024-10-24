@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            min-height: 100vh;
+            width: 50%;
+            /* padding: 10px 20px; */
+            margin-top: 10px;
+            border: 4px solid #ccc;
+            /* box-shadow: 0px 0px 10px #ccc; */
+            background-color: whitesmoke;
+            margin: auto;
+            display: flex;
+        }
+        .left{
+            width: 250px;
+            background-color: #323b4c;
+        }
+        img{
+            height: 200px;
+            height: 200px;
+            border-radius: 100px;
+            padding: 20px 30px;
+        }
+        .right{
+            flex: 1;
+        }
+        .contact{
+            /* right: 120px; */
+            color: #fff;
+            transform: translateX(-20px);
+            margin-top: 20px;
+        }
+        .hr1{
+            height: 2px;
+            /* width: 12px; */
+            color: white;
+            border: 1px solid white;
+            width: 200px;
+            transform: translateX(46px);
+        }
+        .phone{
+            margin: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 30px;
+            transform: translateX(17%);
+
+        }
+        .email{
+            margin: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 30px;
+            transform: translateX(17%);
+
+        }
+        .address{
+            margin: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 30px;
+            transform: translateX(17%);
+        }
+        .BE, .pu, .sslc{
+            margin: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 30px;
+            transform: translateX(17%);
+        }
+        dt{
+            font-weight: 600;
+        }
+        .lang{
+            margin: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 30px;
+            transform: translateX(23%);
+        }
+        .name{
+            padding: 20px 30px;
+            margin-top: 30px;
+        }
+        .about{
+            font-size: 1rem;
+            color: gray;
+            text-align: justify;
+        }
+        .exp{
+            color: #0c0c0c;
+            transform: translateX(28px);
+            margin-top: 20px;
+        }
+        .hr2{
+            height: 2px;
+            /* width: 12px; */
+            color: rgb(30, 24, 24);
+            border: 1px solid rgb(27, 21, 21);
+            width: 300px;
+            transform: translateX(30px); 
+            margin-top: 10px;
+        }
+        .work{
+            padding: 0px 20px;
+            margin-left: 40px;
+            border-left: 2px solid #272626;
+            width: 80%;
+            margin: auto;
+            /* box-shadow: 0px 0px 5px #ccc; */
+        }
+        dl{
+            color: rgb(40, 40, 40);
+            margin-bottom: 30px;
+            line-height: 1.4;
+            position: relative;
+        }
+        dl dd ul{
+            margin-left: 30px;
+        }
+
+        dl:before{
+            content:'';
+            width: 10px;
+            height: 10px;
+            background-color: #101010;
+            border-radius: 100px;
+            position: absolute;
+            left: -25px;
+            top: 10px;
+        }
+        dt{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="left">
+            <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="">
+            <br><br>
+            <center><h2 class="contact">Contact</h2></center>
+            <div class="hr1"></div>
+            <div class="phone">
+                <dt>Phone</dt>
+                <dd>+91 000 0000 000</dd>
+            </div>
+            <div class="email">
+                <dt>Email</dt>
+                <dd>abc@gmail.com</dd>
+            </div>
+            <div class="address">
+                <dt>Address</dt>
+                <dd>Bengaluru</dd>
+            </div>
+            <center><h2 class="contact">Education</h2></center>
+            <div class="hr1"></div>
+            <div class="BE">
+                <dt>B.E</dt>
+                <dd><b>College:</b> Global Academy Of Technology</dd>
+                <dd><b>2024</b></dd>
+            </div>
+            <div class="pu">
+                <dt>PU</dt>
+                <dd><b>College:</b> PACE Shivamogga</dd>
+                <dd><b>2020</b></dd>
+            </div>
+            <div class="sslc">
+                <dt>SSLC</dt>
+                <dd><b>School:</b> BVS Honnali</dd>
+                <dd><b>2018</b></dd>
+            </div>
+            <center><h2 class="contact">Expertise</h2></center>
+            <div class="hr1"></div>
+            <div class="lang">
+                <ul>
+                    <li>JAVA</li>
+                    <li>Advance JAVA</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL </li>
+                </ul>
+            </div>
+            <center><h2 class="contact">Language</h2></center>
+            <div class="hr1"></div>
+            <div class="lang">
+                <ul>
+                    <li>English</li>
+                    <li>Kannada</li>
+                    <li>Telugu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name">
+                <h1 style="font-size: 2rem;">Halesh T G K</h1>
+                <h6>Software Engineer</h6><br>
+                <p class="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas aut nam quaerat error adipisci labore possimus! Aut, natus iure? Officiis tempore, delectus inventore et accusamus minima temporibus nulla quae.</p>
+            </div>
+            <h2 class="exp">Experience</h2>
+            <div class="hr2"></div><br>
+            <div class="work" style="color: darkgrey;">
+                <dl>
+                    <dt>Borcelle Studio</dt>
+                    <dd>
+                        <p>Marketing Manager & Specialist </p>
+                        <ul>
+                            <li>Develop and execute comprehensive marketing strategies and campaigns that align with the company's goals and objectives.</li>
+                            <li>Lead, mentor, and manage a high-performing marketing team,</li>
+                            
+                        </ul>
+                    </dd>
+                </dl>
+        
+                <dl>
+                    <dt>Borcelle Studio</dt>
+                    <dd>
+                        <p>Marketing Manager & Specialist </p>
+                        <ul>
+                            <li>Develop and execute comprehensive marketing strategies and campaigns that align with the company's goals and objectives.</li>
+                            <li>Lead, mentor, and manage a high-performing marketing team</li>
+                            
+                        </ul>
+                    </dd>
+                </dl>
+        
+                <dl>
+                    <dt>Borcelle Studio</dt>
+                    <dd>
+                        <p>Marketing Manager & Specialist </p>
+                        <ul>
+                            <li>Develop and execute comprehensive marketing strategies and campaigns that align with the company's goals and objectives.</li>
+                            <li>Lead, mentor, and manage a high-performing marketing team, fostering .</li>
+                            
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
