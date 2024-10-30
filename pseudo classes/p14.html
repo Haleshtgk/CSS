@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg/1200px-Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg) no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        header h1{
+            font-size: 2rem;
+
+        }
+        header nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            
+        }
+        ul{
+            justify-content: space-between;
+            gap: 30px;
+        }
+        nav ul li a{
+            color: #b91717;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 500;
+            letter-spacing: 4px;
+            list-style: none;
+            justify-content: space-between;
+        }
+        .heading{
+            font-size: 2.3rem;
+            margin-top: 50px;
+            letter-spacing: 0.7rem;
+            color: #0bffde;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .card-listings {
+            color: #666666;
+        }
+
+        /* Specific colors for highlighted cards */
+        .highlight {
+            background-color: #ffb3b3;
+        }
+        .card:hover{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><b style="color: red;">List</b><b style="color: rgb(235, 30, 235);">Race</b></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container1">
+        <center><h1 class="heading">BEST PLACE TO FIND AND EXPLORE <br> THAT ALL YOU NEED</h1></center>
+        <br><br>
+        <center><h1 class="heading2" style="color: white;">Find Best Place, Restaurant, Hotel, Real State and many more think in just One click</h1></center>
+    </section>
+    <br><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-icon">🍽️</div>
+            <div class="card-title">Restaurant</div>
+            <div class="card-listings">150 listings</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🎒</div>
+            <div class="card-title">Destination</div>
+            <div class="card-listings">214 listings</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🏨</div>
+            <div class="card-title">Hotels</div>
+            <div class="card-listings">185 listings</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">💊</div>
+            <div class="card-title">Healthcare</div>
+            <div class="card-listings">200 listings</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🚗</div>
+            <div class="card-title">Automotion</div>
+            <div class="card-listings">120 listings</div>
+        </div>
+    </div>
+    
+</body>
+</html>
