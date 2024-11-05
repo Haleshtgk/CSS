@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container, .container2{
+            padding: 30px;
+            margin: 30px;
+            background-color: lightblue;
+        }
+        .container p, .container2 p{
+            font-size: 1.3rem;
+            line-height: 2;
+            font-family: sans-serif;
+        }
+        .container p::first-letter{
+            font-size: 4rem;
+            font-weight: 900;
+            color: darkred;     
+        }
+        .container2 p::first-line{
+            font-size: 3rem;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            color: green;
+        }
+        .container2 p::first-letter{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS PSEUDO-ELEMENT</h1>
+        <p>The CSS PSEUDO-ELEMENT allow u to style the element or part of the element without adding any id's or classes to them</p>
+        <p>CSS3 introduced a new double-colon (::) syntax for PSEUDO-ELEMENT to destinguish between them and PSEUDO-class</p>
+        <p><b>selector :: PSEUDO-ELEMENT {property : value}</b></p>
+    </center>
+
+    <hr>
+        <h1>::first-letter and ::first-line </h1>
+
+        <div class="container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, ipsam minima? Quis ea consequuntur sapiente corporis quod tempore architecto numquam, dolor deserunt libero reprehenderit laboriosam ex impedit velit sit vitae?</p>
+        </div>
+        <div class="container2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, ipsam minima? Quis ea consequuntur sapiente corporis quod tempore architecto numquam, dolor deserunt libero reprehenderit laboriosam ex impedit velit sit vitae?</p>
+        </div>
+</body>
+</html>

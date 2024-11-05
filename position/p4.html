@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 30px;
+            margin: 30px;
+            width: 200px;
+            height: 200px;
+            background-color: darkcyan;
+            position: relative;
+        }
+        .b1{
+            background-color: red;
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            right: 100px;
+            bottom: 0px;
+        } 
+        
+        .card{
+            width: 250px;
+            height: 300px;
+            background-color: purple;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+            position: relative;
+        }
+        .circle{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            left: 50%;
+            border-radius: 100px;
+        }
+        .card2{
+            width: 250px;
+            height: 300px;
+            background-color: purple;
+            margin: auto;
+            border-radius: 10px;
+            /* box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; */
+            position: relative;
+            margin-top: 40px;
+            overflow: hidden;
+        }
+        .circle2{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            border: 3px solid #000;
+            border-radius: 100px;
+        }
+        .circle3{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            left: -30px;
+            bottom: -30px;
+            border: 3px solid #000;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Position absolute without relative</h1>
+    </center>
+
+    <section class="container">
+        <div class="b1">
+            <p>absolute</p>
+        </div>
+    </section>
+    <div class="card">
+        <div class="circle"></div>
+    </div>
+    <div class="card2">
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+</body>
+</html>

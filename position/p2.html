@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
+    <style>
+        .container{
+            background-color: #888;
+            padding: 30px;
+        }
+        .container div{
+            width: 200px;
+            height: 100px;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-family: sans-serif;
+            position: relative;
+        }
+        .b1{
+            left: 100px;
+        }
+        .b2{
+            right: 100px;
+        }
+        .b3{
+            top: 100px;
+            left: 300px;
+        }
+        .b4{
+            bottom: 100px;
+            left: 100px;
+        }
+    </style>
 </head>
 <body>
-    
+    <center>
+        <h1>Relative Position</h1>
+    </center>
+
+    <section class="container">
+        <div class="b1">
+            <p>left</p>
+        </div>
+        <div class="b2">
+            <p>Right</p>
+        </div>
+        <div class="b3">
+            <p>Top</p>
+        </div>
+        <div class="b4">
+            <p>Bottom</p>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            z-index: 10;
+        }
+
+        header p {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 100px; 
+            padding: 20px;
+        }
+
+
+        .sidebar {
+            position: sticky;
+            top: 100px; 
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-right: 20px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .content {
+            flex: 1;
+            position: relative;
+            background-color: #fafafa;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #section2 img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+            border-top: 3px solid #444;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Awesome Website</h1>
+        <p>A simple demonstration of CSS positioning types</p>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2><br>
+            <ul>
+                <li><a href="#section1">Introduction</a></li>
+                <li><a href="#section2">Features</a></li>
+                <li><a href="#section3">Gallery</a></li>
+                <li><a href="#section4">Contact Us</a></li>
+            </ul>
+        </aside>
+        <br>
+        <main class="content">
+            <section id="section1">
+                <h2>Introduction</h2>
+                <p>This template showcases different CSS positioning techniques, including relative, absolute, fixed, and sticky positioning. Scroll to see how each section is styled and positioned.</p>
+            </section>
+            <br><br>
+            <section id="section2">
+                <h2>Features</h2>
+                <p>Here are some key features of this page layout:</p>
+                <ul>
+                    <li>Fixed header that remains at the top of the viewport.</li>
+                    <li>Sticky sidebar that scrolls with the content.</li>
+                    <li>Image positioned absolutely within the content.</li>
+                    <li>Responsive design elements.</li>
+                </ul>
+                <img src="https://www.serengeti.com/assets/img/outside-dining-serengeti-one-nature-nyaruswiga-small.jpg" alt="Feature Image">
+            </section>
+<br><br>
+            
+            <section id="section3">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDGdGz9K005cBaId1ELTRD8OqEBqCByT2XKzgEQOPBq8bGj4JFSzTwEvYFBSjrP7TVnM&usqp=CAU" alt="Gallery Image 1"></div>
+                    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzVasnP40twsR8oiWDTnAUm9jLm2c43QQ4w&s" alt="Gallery Image 2"></div>
+                    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl3ikK1S6ys7jtxeddUqZpqQvaRdtUvGMhk-dtkggp_zR3PBRQDtSAnrmIVtnDhowQyGs&usqp=CAU" alt="Gallery Image 3"></div>
+                    <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipBmJJ_rQvqn0KuYVp7YZUJi6AptDksjIjA&s" alt="Gallery Image 4"></div>
+                </div>
+            </section>
+
+           <br><br>
+            <section id="section4">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to reach out.</p>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Awesome Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
