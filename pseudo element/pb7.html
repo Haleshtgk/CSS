@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .line1{
+            width: 2px;
+            height: 80px;
+            background-color: black;
+            position: relative;
+            
+        }
+        .line1::before{
+            content: '';
+            width: 100px;
+            height: 30px;
+            background-color: black;
+            position: absolute;
+            border-radius: 100%;
+            left: -90px;
+            transform: rotate(40deg);
+
+        }
+        .line1::after{
+            content: '';
+            width: 100px;
+            height: 30px;
+            background-color: black;
+            position: absolute;
+            border-radius: 100%;
+            right: -90px;
+            top: 20px;
+            transform: rotate(-40deg);
+        }
+        .pot{
+            width: 90px;
+            height: 100px;
+            background-color: black;
+            transform: translateX(-50%) translateY(-20px);
+            border-radius: 10px;
+            /* z-index: 4; */
+            position: relative;
+        }
+        .pot::before{
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 40px;
+            background-color: rgb(66, 44, 28) ;
+            border-radius: 100%;
+            left: 50%;
+            top: -10px;
+            transform: translateX(-50%);
+        }
+        .flower{
+            width: 80px;
+            transform: translateX(-38px) translateY(28px);
+        }
+    </style>
+</head>
+<body>
+    <div class="graphics">
+        <img src="https://media.tenor.com/QkGyKMgZGKEAAAAj/blooming-flower-sticker.gif" alt="flower" class="flower">
+        <div class="line1"></div>
+        <div class="line1"></div>
+        <div class="line1"></div>
+        <div class="line1"></div>
+        <div class="pot"></div>
+    </div>
+</body>
+</html>

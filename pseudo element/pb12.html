@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bubble {
+    width: 60px;
+    height: 40px;
+    background-color: #8a6100;
+    border-radius: 10px;
+    position: relative;
+    border: 3px solid #022c04;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #8a6100;
+    bottom: -10px;
+    left: 10px;
+    transform: rotate(45deg);
+    border: 3px solid #022c04;
+}
+
+    </style>
+</head>
+<body>
+    <div class="bubble"></div>
+
+</body>
+</html>
