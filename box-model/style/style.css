@@ -1,0 +1,27 @@
+/* p1.html */
+.padding{
+    border: 2px solid #CCC;
+}
+.padding h1{
+    width: fit-content;
+}
+.b1{
+    background-color: rgb(126, 3, 108);
+    color: #fff;
+    padding: 30px; /*all sides*/
+}
+.b2{
+    background-color: rgb(3, 62, 126);
+    color: #fff;
+    padding: 30px 60px; /*x-axis and y-axis*/
+}
+.b3{
+    background-color: rgb(75, 126, 3);
+    color: #fff;
+    padding: 30px 60px 90px; /*x-axis left-right bottom*/
+}
+.b4{
+    background-color: rgb(126, 58, 3);
+    color: #fff;
+    padding: 20px 40px 60px 80px; /*t, r, b, l*/
+}
