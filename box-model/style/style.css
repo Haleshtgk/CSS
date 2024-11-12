@@ -25,3 +25,81 @@
     color: #fff;
     padding: 20px 40px 60px 80px; /*t, r, b, l*/
 }
+.borders{
+    padding: 30px;
+}
+.borders h1{
+    width: fit-content;
+    padding: 20px;
+}
+.borders .f1{
+    border: 5px solid darkgoldenrod;/*solid dotted dashed double groove ridge inset outset*/
+}
+.borders .f2{
+    border-width: 5px;
+    border-color: red green;
+    border-style: dotted;
+}
+
+.borders .f3{
+    border-width: 5px;
+    border-color: red green blue;
+    border-style: double;
+}
+
+.borders .f4{
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+
+.loading-example{
+    padding: 30px;
+}
+.loading{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 100px;
+    border-width: 8px;
+    border-color: blue transparent blue blue;
+    border-style: dotted;
+    animation: animate 0.9s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.example3{
+    padding: 30px;
+
+}
+.example3 .e1{
+    width: 10px;
+    border-width: 30px;
+    border-color: transparent green transparent yellow;
+    border-style: solid;
+    animation: animate 0.9s linear infinite;
+}
+
+.margin{
+    padding: 30px;
+}
+.margin .f1{
+    margin: 30px;
+}
+.margin .f2{
+    margin: 25px 50px;
+}
+.margin .f3{
+    margin: 25px 50px 75px;
+}
+.margin .f4{
+    margin: 25px 50px 75px 100px;
+}
