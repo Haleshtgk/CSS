@@ -368,73 +368,234 @@
             width: 100px;
             height: 100px;
         }
-        .working-processes {
-  text-align: center;
-  padding: 50px;
-  background-color: #fdfdfd;
-}
+        .work-pro{
+            background-color: #fffff5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 40px;
+        }
+        .wpl1{
+            flex: 2;
+            color: black;
+        }
+        .wrr1{
+            flex: 1;
 
-.working-processes h1 {
-  font-size: 2.5rem;
-  color: black;
+        }
+        .step {
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            padding: 1rem;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            color: #000;
+            transform: translateX(-40px);
+            }
+
+            .step:hover {
+            /* transform: scale(1.02); */
+            background-color: #bff747;
+            }
+            .feedback{
+                background-color: #fffff5;
+            }
+            .cards1{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 30px;
+                gap: 40px;
+            }
+            .card-left1{
+                flex: 1;
+                width: 400px;
+                height: 400px;
+                background-color: #fffff5;
+                border: 2px solid black;
+                border-radius: 30px;
+
+            }
+            .card-left1:hover{
+                box-shadow: 5px 5px 0px black;
+                transition: 1s;
+            }
+            .card-right1:hover{
+                box-shadow: 5px 5px 0px black;
+                transition: 1s;
+            }
+            .card-left2:hover{
+                box-shadow: 5px 5px 0px black;
+                transition: 1s;
+            }
+            .card-right2:hover{
+                box-shadow: 5px 5px 0px black;
+                transition: 1s;
+            }
+            .card-right1{
+                flex: 1;
+                width: 400px;
+                height: 450px;
+                background-color: #fffff5;
+                border: 2px solid black;
+                border-radius: 30px;
+
+            }
+            .cards2{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 30px;
+                gap: 40px;
+            }
+            .card-left2{
+                flex: 1;
+                width: 400px;
+                height: 400px;
+                background-color: #fffff5;
+                border: 2px solid black;
+                border-radius: 30px;
+
+            }
+            .card-right2{
+                flex: 1;
+                width: 400px;
+                height: 400px;
+                background-color: #fffff5;
+                border: 2px solid black;
+                border-radius: 30px;
+
+            }
+            .profilesPeople{
+                padding: 30px;
+                display: flex;
+                gap: 30px;
+            }
+            .people1 img{
+                width: 250px;
+                height: 280px;
+                border: 7px solid black;
+                border-radius: 5px;
+            }
+            .people2 img{
+                width: 250px;
+                height: 280px;
+                border: 7px solid black;
+                border-radius: 5px;
+            }
+            .people3 img{
+                width: 250px;
+                height: 280px;
+                border: 7px solid black;
+                border-radius: 5px;
+            }
+            .people4 img{
+                width: 250px;
+                height: 280px;
+                border: 7px solid black;
+                border-radius: 5px;
+            }
+            .main-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.working1{
-    flex: 2;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-
-.steps {
-    flex: 1;
-  /* display: flex; */
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+.left-section {
   flex: 1;
+  min-width: 300px;
 }
 
-.step {
-  border: 2px solid #ddd;
-  padding: 15px 20px;
-  border-radius: 10px;
-  background-color: #fff;
+.right-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 .highlight {
+  display: inline;
+}
+
+h1 .asterisk {
+  color: #b4eb34;
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-highlight {
+  color: #b4eb34;
   font-weight: bold;
 }
 
-/* Testimonials Section */
-.testimonials {
-  padding: 50px;
-  text-align: center;
+.arrow svg path {
+  stroke: #b4eb34;
+  stroke-width: 2;
 }
 
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+.right-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.testimonial {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fff;
-  text-align: left;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.testimonial h3 {
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8rem 1.5rem;
+  background: #b4eb34;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form button .arrow {
+  margin-left: 0.5rem;
   font-size: 1.2rem;
-  color: #444;
 }
 
-.author {
-  display: block;
-  margin-top: 10px;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #777;
+.contact-form button:hover {
+  background: #a2d82f;
 }
     </style>
 </head>
@@ -550,7 +711,7 @@
         </div> <br><br><br><br><br><br><br><br>
     </section>
 
-    <section class="moveimg">
+    <!-- <section class="moveimg">
         <br><br><br><br>
         <center><h1 class="moving-heading" style="font-size: 3.5rem; color: #fdfde1; letter-spacing: 0.2rem;">Have a wide range of <br>creative projects <img src="data:image/png;base64,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" alt=""></h1></center>
 
@@ -571,8 +732,174 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section class="work-pro">
+        <div class="wpl1">
+            <h1 style="font-size: 5rem; letter-spacing: 4px;">Our high-quality <img src="data:image/png;base64,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" alt=""> <br> working <br> processes</h1> <br><br>
+
+            <p style="font-size: 1.3rem; color: black;">We focus at every stage on effective communication and <br> collaboration between the client and ensuring that the final design meets <br> the client s objectives and expectations.</p> <br>
+            <p style="font-size: 1.3rem; color: black;">It is important to note that these are simplified steps, and the actual <br> work process may vary depending on the complexity of the project.</p>
+        </div>
+        <div class="wpr1">
+            <div class="step" style="padding: 40px; font-size: 2rem;">
+                <span>01/</span> Project idea 
+              </div><br>
+              <div class="step" style="padding: 40px; font-size: 2rem;">
+                <span>02/</span> Brainstorming 
+              </div><br>
+              <div class="step" style="padding: 40px; font-size: 2rem;">
+                <span>03/</span> Launch 
+              </div>
+        </div>
+        <br><br><br>
     </section>
-  
+    
+    <section class="feedback">
+        <br><br><br><br><br><br><hr><br><br>
+       <center>
+         <h1 style="font-size: 4rem; color: black;">Clients are always <br> satisfied with us <img src="data:image/png;base64,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" alt="">  </h1>
+       </center>
+
+       <div class="cards1">
+        <div class="card-left1">
+            <div class="star" style="color: black; padding: 30px; font-size: 2rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 style="font-size: 2rem; color: black; padding-left: 30px;">Super customer service!</h1>
+            <p style="padding-left: 30px; color: black; padding-top: 30px; font-size: 1.2rem;">Excellent customer service and I was really impressed and happy with my purchase especially as it was a last minute order which got to me in time, and when it arrived I was very happy with the design and size and so was the recipient.</p>
+            <div class="prof" style="display: flex; align-items: center; padding: 30px; font-size: 1rem; color: black; ">
+                <p class="prof-img"><img src="https://aximo-react.vercel.app/assets/t_thumb1-BpinlyXf.png" alt="" style="border-radius: 100px; border: 2px solid black;"></p>
+            <p class="prof-data" style="font-size: 1.2rem; transform: translateX(20px);"> <b>William Jack </b>Founder@XYZ</p>
+            </div>
+        </div>
+        <div class="card-right1">
+            <div class="star" style="color: black; padding: 30px; font-size: 2rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 style="font-size: 2rem; color: black; padding-left: 30px;">Exceptional creativity and <br> vision!</h1>
+            <p style="padding-left: 30px; color: black; padding-top: 30px; font-size: 1.2rem;">Working Mthemeus was a game-changer for our brand. Their exceptional creativity & vision breathed new life into our visual. The logo they perfectly captures our essence & has become instantly recognizable. We couldn't be happier the results!</p>
+            <div class="prof" style="display: flex; align-items: center; padding: 30px; font-size: 1rem; color: black; ">
+                <p class="prof-img"><img src="https://aximo-react.vercel.app/assets/t_thumb2-D_UDSjks.png" alt="" style="border-radius: 100px; border: 2px solid black;"></p>
+            <p class="prof-data" style="font-size: 1.2rem; transform: translateX(20px);"> <b>Smith Align</b> Businessman</p>
+            </div>
+        </div>
+       </div>
+       <div class="cards2">
+        <div class="card-left2">
+            <div class="star" style="color: black; padding: 30px; font-size: 2rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 style="font-size: 2rem; color: black; padding-left: 30px;">Innovative and professional</h1>
+            <p style="padding-left: 30px; color: black; padding-top: 30px; font-size: 1.2rem;">I can't say enough good things about them. Their team is not only incredibly talented but also highly professional. They listened to our ideas and brought to life in ways we couldn't have imagined. Their innovative approach and dedication to our project.</p>
+            <div class="prof" style="display: flex; align-items: center; padding: 30px; font-size: 1rem; color: black; ">
+                <p class="prof-img"><img src="https://aximo-react.vercel.app/assets/t_thumb3-V_4xMv8Y.png" alt="" style="border-radius: 100px;border: 2px solid black;"></p>
+            <p class="prof-data" style="font-size: 1.2rem; transform: translateX(20px);"> <b>Smith Align</b> Milano Joe</p>
+            </div>
+        </div>
+        <div class="card-right2">
+            <div class="star" style="color: black; padding: 30px; font-size: 2rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 style="font-size: 2rem; color: black; padding-left: 30px;">Transformed our brand</h1>
+            <p style="padding-left: 30px; color: black; padding-top: 30px; font-size: 1.2rem;">Our partnership with Mthemeus transformed our brand from ordinary to extraordinary. Their branding expertise and design work elevated our marketing materials to a whole new level. Our customers have taken notice, and boost in brand recognition.</p>
+            <div class="prof" style="display: flex; align-items: center; padding: 30px; font-size: 1rem; color: black; ">
+                <p class="prof-img"><img src="https://aximo-react.vercel.app/assets/t_thumb4-mmUGnSgS.png" alt="" style="border-radius: 100px; border: 2px solid black;"></p>
+            <p class="prof-data" style="font-size: 1.2rem; transform: translateX(20px);"> <b>Danial Mark </b> Marketing Director</p>
+            </div>
+        </div>
+       </div>
+       <br><br><br>
+    </section>
+    <section class="marquee-p" style="display: flex; align-items: center; padding: 20px;">
+        <marquee behavior="" direction="" >
+            <img src="data:image/png;base64,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" alt="" width="50px"><span style="color: black;">......</span><b style="font-size: 3rem;">Let's create new experiences</b>
+            <span style="color: black;">......</span>
+            <img src="data:image/png;base64,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" alt="" width="50px"><span style="color: black;">......</span><b style="font-size: 3rem;">Let's create new experiences</b>
+        </marquee>
+    </section>
+
+    <section class="all-profiles" style="padding: 30px; background-color: #fffff5; padding-top: 80px;">
+        <center>
+            <h1 style="font-size: 4rem; color: black;">We have a team of <br>creative people <img src="data:image/png;base64,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" alt=""></h1>
+        </center>
+
+        <div class="profilesPeople">
+            <div class="people1">
+                <img src="https://aximo-react.vercel.app/assets/team1-DmWE10zh.png" alt=""> <br>
+                <center style="color: black; padding-top: 20px;">
+                    <h1 style="font-style: 1.3rem;">Andrew Mark</h1> <br>
+                    <p>Creative Director</p>
+                </center>
+            </div>
+            <div class="people2">
+                <img src="https://aximo-react.vercel.app/assets/team2-CCsDsUp2.png" alt="">
+                <center style="color: black; padding-top: 20px;">
+                    <h1>Jack Taylor</h1> <br>
+                    <p>Senior Designer</p>
+                </center>
+            </div>
+            <div class="people3">
+                <img src="https://aximo-react.vercel.app/assets/team3-Dq8iIK3F.png" alt="">
+                <center style="color: black; padding-top: 20px;">
+                    <h1>Martine Joy</h1> <br>
+                    <p>Project Manager</p>
+                </center>
+            </div>
+            <div class="people4">
+                <img src="https://aximo-react.vercel.app/assets/team4-CN3ED17F.png" alt="">
+                <center style="color: black; padding-top: 20px;">
+                    <h1>Adam Straw</h1> <br>
+                    <p>Web Developer</p>
+                </center>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <div class="main-container" style="padding-top: 50px;">
+        <div class="left-section">
+          <h1 style="color: #fdfde1; font-size: 4rem;">
+            Let's start a <img src="data:image/png;base64,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" alt=""> <br> project <br> together
+            
+          </h1>
+          <p class="description" style="font-size: 1.3rem; color: #fdfde1;">
+            We work closely with our clients to understand their objectives, target audience, and unique needs. We use our creative skills to translate these requirements into practical design solutions.
+          </p>
+          <div class="contact-info">
+            <p><span class="contact-highlight">Give us a call:</span> <br> (123) 456-7890</p> <br>
+            <p><span class="contact-highlight">Send us an email:</span> <br> info@mthemeus.com</p>
+          </div>
+          <center><div class="arrow">
+            <img src="https://aximo-react.vercel.app/assets/shape1-QTZDjB63.png" alt="" style="transform: translateX(90px); transform: translateY(-90px);">
+          </div></center>
+        </div>
+    
+        <div class="right-section">
+          <h2>Send us a message</h2>
+          <form class="contact-form" style="margin-top: 10px;">
+            <input type="text" placeholder="Your Name" required style="border-radius: 30px;">
+            <input type="email" placeholder="Your email address" required style="border-radius: 30px;">
+            <input type="tel" placeholder="+088-234-6849" required style="border-radius: 30px;">
+            <textarea placeholder="Write your message here..." rows="4" style="border-radius: 30px;"></textarea>
+            <button type="submit" style="border-radius: 30px;">Send message <span class="arrow">➜</span></button>
+          </form>
+        </div>
+      </div>
     
      
     
