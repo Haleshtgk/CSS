@@ -334,6 +334,7 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
+
         }
         .img1{
             flex: 1;
@@ -367,6 +368,74 @@
             width: 100px;
             height: 100px;
         }
+        .working-processes {
+  text-align: center;
+  padding: 50px;
+  background-color: #fdfdfd;
+}
+
+.working-processes h1 {
+  font-size: 2.5rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.working1{
+    flex: 2;
+}
+
+
+.steps {
+    flex: 1;
+  /* display: flex; */
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.step {
+  border: 2px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.testimonial h3 {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+}
     </style>
 </head>
 <body>
@@ -486,20 +555,27 @@
         <center><h1 class="moving-heading" style="font-size: 3.5rem; color: #fdfde1; letter-spacing: 0.2rem;">Have a wide range of <br>creative projects <img src="data:image/png;base64,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" alt=""></h1></center>
 
         <br><br>
-        <div class="main-img" style="gap: 130px;">
-            <div class="img1">
-                <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
-            </div>
-            <div class="img2">
-                <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
-            </div>
-            <div class="img3">
-                <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
-            </div>
-            <div class="img4">
-                <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
+        <div class="main-img" style="gap: 130px; display: flex;">
+            <div style="gap: 130px; display: flex;">
+                <div class="img1">
+                    <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px; transform: translateX(-50px);">
+                </div>
+                <div class="img2">
+                    <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
+                </div>
+                <div class="img3">
+                    <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
+                </div>
+                <div class="img4">
+                    <img src="https://i.ytimg.com/vi/195RY7jCuZg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDulUAT8t4DytlZYSXrtKJorB5qwg" alt="" style="width: 450px; height: 450px;">
+                </div>
             </div>
         </div>
     </section>
+  
+    
+     
+    
+
 </body>
 </html>
